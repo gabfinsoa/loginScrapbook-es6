@@ -18,8 +18,8 @@ class App {
             //URLs de acessos
             // this.url = 'https://api-scrapbook-js-es6.herokuapp.com/cards';
             // this.url = 'http://localhost:3334/cards/';
-            this.url = 'http://api-scrapbook-struture.herokuapp.com/';
-            // this.url = 'http://localhost:3000/cards/';
+            // this.url = 'http://api-scrapbook-struture.herokuapp.com/';
+            this.url = 'http://localhost:3000/cards/';
 
             //Trazer os recados ao iniciar a aplicacao
             this.getScraps(this); //O THIS passa a aplicação correta
@@ -116,7 +116,8 @@ class App {
 
     registerEvents() {
         this.buttonCreate.onclick = (event) => this.createCard(event);
-        // this.buttonEdit.onclick = (event) => this.editCard(event);
+        // this.buttonLogin.onclick = (event) => this.login(event);
+        this.buttonEdit.onclick = (event) => this.editCard(event);
     }
 
 
